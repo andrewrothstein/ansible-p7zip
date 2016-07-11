@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: '@TODO name this role'
+  description: install p7zip
   company: BlackRock
   license:
     - MIT
@@ -16,8 +16,11 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - trusty
+        - xenial
   galaxy_tags:
     - development
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.epel
+    version: v1.0.1
   
